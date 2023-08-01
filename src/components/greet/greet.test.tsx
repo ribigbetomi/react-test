@@ -7,9 +7,10 @@ import { Greet } from "./greet";
 //   expect(textElement).toBeInTheDocument();
 // });
 describe("Greet", () => {
+  //fit for test.only to focus on a particular test, or xit for test.skip to skip a test
   test("renders correctly", () => {
     render(<Greet />);
-    const textElement = screen.getByText("Hello");
+    const textElement = screen.getByText(/Hello/i);
     expect(textElement).toBeInTheDocument();
   });
 });
