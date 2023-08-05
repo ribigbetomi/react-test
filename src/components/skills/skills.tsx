@@ -3,6 +3,7 @@ import { SkillsProps } from "./skills.types";
 
 export const Skills = (props: SkillsProps) => {
   const { skills } = props;
+  //   console.log(skills);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
